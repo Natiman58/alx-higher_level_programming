@@ -23,8 +23,12 @@ if (new == NULL)
 new->n = number;
 new->next = NULL;
 
-if (*head == NULL)
+key = number;
+if (*head == NULL || key < (*head)->n)
+{
+	new->next = *head;
 	*head = new;
+}
 else
 {
 key = new->n;
