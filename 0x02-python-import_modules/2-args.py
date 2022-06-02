@@ -9,6 +9,7 @@ elif arg_c == 1:
     print(f"{arg_c} argument:")
     print(f"{arg_c}:", sys.argv[1])
 else:
+    print(f"{arg_c} arguments:")
     while i <= arg_c:
         print(f"{i}: {sys.argv[i]}")
         i += 1
