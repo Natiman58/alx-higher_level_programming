@@ -2,7 +2,6 @@
 def multiple_returns(sentence):
     new_tuple = ()
     if len(sentence) == 0:
-        new_tuple = (sentence)
         new_tuple[0] = "None"
     else:
         length = len(sentence)
