@@ -40,4 +40,4 @@ data structures
 12-switch.py - a function to switch value of a and b.
 
 
-3-is_palindrome.c - a function in C that checks if a singly linked list is a palindrome.
+13-is_palindrome.c - a function in C that checks if a singly linked list is a palindrome.
