@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e673c589-7643-4a5b-9dd7-a9a75d17f045" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/102-magic_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/102-magic_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/102-magic_calculation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
