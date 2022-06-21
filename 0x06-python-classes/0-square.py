@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""first class"""
+"""My first class"""
 
 
 class Square:
