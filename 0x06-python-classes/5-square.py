@@ -5,6 +5,7 @@
 class Square:
     """A class with private instance attribute 'size'"""
     __size = ''
+    __position = ''
 
     def __init__(self, size=0):
         """Instantiation with size"""
