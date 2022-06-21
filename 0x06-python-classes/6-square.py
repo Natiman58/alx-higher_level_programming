@@ -10,10 +10,6 @@ class Square:
         """Instantiation with size"""
         self.__size = size
         self.__position = position
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
 
     @property
     def size(self):
@@ -55,6 +51,7 @@ class Square:
         with the char #"""
         if self.__size == 0:
             print()
+            return
         else:
             for i in range(0, self.__position[1]):
                 print()
