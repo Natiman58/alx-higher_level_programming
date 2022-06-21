@@ -16,10 +16,6 @@ class Square:
         if size < 0:
             raise ValueError('size must be >= 0')
 
-    def area(self):
-        """A public instance method that returns the current square area """
-        return self.__size * self.__size
-
     @property
     def size(self):
         """To retrieve size"""
@@ -50,6 +46,10 @@ class Square:
         if value[0] < 0 or value[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
+
+    def area(self):
+        """A public instance method that returns the current square area """
+        return self.__size * self.__size
 
     def my_print(self):
         """A public instance method that prints the square in stdout
