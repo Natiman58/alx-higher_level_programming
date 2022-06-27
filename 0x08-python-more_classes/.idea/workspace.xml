@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e0e931-a785-4667-8741-f0de5cf6504d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/101-nqueens.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x07-python-test_driven_development/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x07-python-test_driven_development/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x07-python-test_driven_development/101-lazy_matrix_mul.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x07-python-test_driven_development/101-lazy_matrix_mul.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x07-python-test_driven_development/tests/101-lazy_matrix_mul.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0x07-python-test_driven_development/tests/101-lazy_matrix_mul.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9-main.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +43,34 @@
     "last_opened_file_path": "/Users/natnaelmanyazewal/Dev/alx-higher_level_programming/0x08-python-more_classes"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="101-nqueens" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="0x08-python-more_classes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/101-nqueens.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.101-nqueens" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
