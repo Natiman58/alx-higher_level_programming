@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     A module that defines a rectangle\
-     by: (based on 3-rectangle.py)
+     by: (based on 4-rectangle.py)
 """
 
 
@@ -37,6 +37,13 @@ class Rectangle:
         of the return value
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+        Prints the message Bye rectangle...\
+        when an instance of Rectangle is deleted.
+         """
+        print("Bye rectangle...")
 
     @property
     def width(self):
