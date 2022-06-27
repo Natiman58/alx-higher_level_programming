@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     A module that defines a rectangle\
-     by: (based on 0-rectangle.py)
+     by: (based on 1-rectangle.py)
 """
 
 
