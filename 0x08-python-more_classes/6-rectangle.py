@@ -8,8 +8,8 @@
 class Rectangle:
     """
     A class with attributes:
-        self.__width:  private class attribute.
-        self.__height:  private class attribute.
+        self.width:  private class attribute.
+        self.height:  private class attribute.
         number_of_instances: public class attribute.
     """
     number_of_instances = 0
@@ -18,8 +18,8 @@ class Rectangle:
         """
         Initialize the fields.
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     def __str__(self):
