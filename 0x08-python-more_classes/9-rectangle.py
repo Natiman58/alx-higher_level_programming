@@ -125,4 +125,4 @@ class Rectangle:
         Args:
             size: new size to set for the new rectangle
         """
-        return cls(size, size)
+        return Rectangle(size, size)
