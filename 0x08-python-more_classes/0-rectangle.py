@@ -6,6 +6,6 @@
 
 class Rectangle:
     """
-        An empty class called rectangle.
+        An empty class called Rectangle.
     """
     pass
