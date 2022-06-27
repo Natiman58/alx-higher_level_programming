@@ -11,7 +11,7 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """
-        Initialize the attributes.
+        Initialize the fields.
         """
         self.__width = width
         self.__height = height
