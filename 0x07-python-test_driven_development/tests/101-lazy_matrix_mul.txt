@@ -48,3 +48,39 @@ Passing a list of tuples
     Traceback (most recent call last):
     ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)
 
+Passing a list of stings
+
+        >>> lazy_matrix_mul([[]], 'Alx')
+        Traceback (most recent call last):
+        ValueError: matmul: Input operand 1 does not have enough dimensions (has 0, gufunc core with signature (n?,k),(k,m?)->(n?,m?) requires 1)
+
+passing empty matrix
+
+        >>> lazy_matrix_mul([], [[]])
+        Traceback (most recent call last):
+        ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 1 is different from 0)
+
+passing a matrix with list of strings
+
+        >>> lazy_matrix_mul([['g', 'a','t']],[[1, 4, 'o']])
+        Traceback (most recent call last):
+        ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 1 is different from 3)
+
+Missing two arguments:
+
+        >>> lazy_matrix_mul()
+        Traceback (most recent call last):
+        TypeError: lazy_matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+Passing matrices that cant be multiplied:
+
+        >>> lazy_matrix_mul([[2, 3, 6],[3, 4, 5],[1, 2, 3]], [[7, 8], [9, 0]])
+        Traceback (most recent call last):
+        ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)
+
+
+Passing a matrix which its rows have different size
+
+        >>> lazy_matrix_mul([[2, 2, 2], [4, 4, 4]], [[2], [3, 3]])
+        Traceback (most recent call last):
+        ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)
