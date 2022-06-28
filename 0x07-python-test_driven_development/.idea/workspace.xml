@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d732f5e2-dcb5-4bf5-8f6b-a474ae7cfd68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/100-matrix_mul.py" beforeDir="false" afterPath="$PROJECT_DIR$/100-matrix_mul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/101-lazy_matrix_mul.py" beforeDir="false" afterPath="$PROJECT_DIR$/101-lazy_matrix_mul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/101-lazy_matrix_mul.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/101-lazy_matrix_mul.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x08-python-more_classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x08-python-more_classes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x08-python-more_classes/7-rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x08-python-more_classes/7-rectangle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

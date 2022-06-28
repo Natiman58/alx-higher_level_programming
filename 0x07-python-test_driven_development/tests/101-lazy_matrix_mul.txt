@@ -1,0 +1,50 @@
+============================
+The "lazy_matrix_mul" module
+============================
+
+Using "lazy_matrix_mul" function
+________________________________
+
+Import the function:
+    >>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+Now running tests:
+
+matrices(row * col)
+
+Multiplying matrices 1*2
+
+    >>> lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+    array([[13, 16]])
+
+Multiplying matrices 1*3
+    >>> lazy_matrix_mul([1, 2, 3], [[3],[4],[5]])
+    array([26])
+
+Multiplying matrices 2*2
+
+    >>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    array([[ 7, 10],
+           [15, 22]])
+
+Multiplying matrices 3*3
+
+    >>> list1 = [[11, 43, -47], [0, 9, 7], [3, 6, 9]]
+    >>> list2 = [[1, -4, 5], [2, -1, 2], [0, -3, 0]]
+    >>> lazy_matrix_mul(list1, list2)
+    array([[ 97,  54, 141],
+           [ 18, -30,  18],
+           [ 15, -45,  27]])
+
+Passing None as a matrix
+
+    >>> lazy_matrix_mul(None, None)
+    Traceback (most recent call last):
+    ValueError: matmul: Input operand 0 does not have enough dimensions (has 0, gufunc core with signature (n?,k),(k,m?)->(n?,m?) requires 1)
+
+Passing a list of tuples
+
+    >>> lazy_matrix_mul([(1, 4, 6)], [(4), (8)])
+    Traceback (most recent call last):
+    ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)
+
