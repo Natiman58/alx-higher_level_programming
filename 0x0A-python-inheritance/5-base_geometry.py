@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-An empty class
+An empty class module.
 """
 
 

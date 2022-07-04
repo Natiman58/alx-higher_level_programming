@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    A function that returns list of available attributes
+    A module that holds a class which\
+    returns list of available attributes
     and methods of an object.
 """
 

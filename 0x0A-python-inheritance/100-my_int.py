@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    A method that holds an inverted class\
+    A module that holds an inverted class\
     that inherits from int super class\
     and returns the opposite;\
     equal is interpreted as not equal\

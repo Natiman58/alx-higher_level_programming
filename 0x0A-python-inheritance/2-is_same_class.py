@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A function that checks if the obj is\
+A module that checks if the obj is\
 is in the same class.
 """
 

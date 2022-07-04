@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    A method that creates a rectangle by inheritance.
+    A module that creates a rectangle by inheritance.
 """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry

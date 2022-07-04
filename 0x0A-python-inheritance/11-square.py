@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A method that creates a square by inheritance.
+A module that creates a square by inheritance.
 """
 Rectangle = __import__('9-rectangle').Rectangle
 
