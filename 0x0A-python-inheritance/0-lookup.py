@@ -6,4 +6,6 @@
 
 
 def lookup(obj):
+    """ Returns all the lists of attributes """
+
     return dir(obj)
