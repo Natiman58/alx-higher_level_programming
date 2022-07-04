@@ -34,3 +34,8 @@ Running Tests:
 
     >>> my_list.print_sorted()
     ['a', 'l', 'x']
+
+    >>> my_list = MyList()
+
+    >>> my_list.print_sorted()
+    []
