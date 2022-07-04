@@ -11,7 +11,7 @@ def add_attribute(oj_name, at_name, at_value):
     'at_name' - attribute name\
     'at_value' - attribute value we want to set
     """
-    set_t = {str}
+    set_t = {str, int, float, dict, list, frozenset, tuple, object, type}
 
     if type(oj_name) in set_t:
         raise TypeError("Can't add new attribute")
