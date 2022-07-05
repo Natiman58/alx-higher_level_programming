@@ -16,7 +16,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-            Retrieves the dictionary representation of Student class.
+            Retrieves the dictionary representation of Student class\
             if the attr is in attrs retrieve only the name if not all
         """
         if type(attrs) != list:
