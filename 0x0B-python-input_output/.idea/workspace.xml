@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26067ba-f7f0-43e7-b17b-2b2ad5387766" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/11-student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12-main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12-pascal_triangle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x05-python-exceptions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x07-python-test_driven_development/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0x07-python-test_driven_development/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x07-python-test_driven_development/102-python.c" beforeDir="false" afterPath="$PROJECT_DIR$/../0x07-python-test_driven_development/102-python.c" afterDir="false" />
