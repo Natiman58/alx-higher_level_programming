@@ -5,7 +5,7 @@
 
 class Student:
     """
-        A class that defines a student by\
+        A class that defines a student by
         first_name, last_name, age.
     """
 
