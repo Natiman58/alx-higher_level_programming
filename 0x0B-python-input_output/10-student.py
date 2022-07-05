@@ -17,9 +17,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-            Retrieves the dictionary representation of Student class.\
-            if attr is list of strings only the names in the list must be printed\
-            otherwise all the attributes are printed.\
+            Retrieves the dictionary representation of Student class.
         """
         if type(attrs) != list:
             return self.__dict__
