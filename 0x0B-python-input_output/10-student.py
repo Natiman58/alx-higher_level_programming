@@ -22,7 +22,7 @@ class Student:
             if attr is list of strings only the names in the list must be printed
             otherwise all the attributes are printed.
         """
-        if type(attrs) is not list or attrs == None:
+        if attrs == None or type(attrs) != list:
             return self.__dict__
         else:
             temp = {}
