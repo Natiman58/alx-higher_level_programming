@@ -17,10 +17,10 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """ Retrieves the dictionary representation of Srudent\
-            param attrs: the attributes passed\
-            return: only attribute names if attrs name is in the list\
-            otherwise retrieves all attributes.
+        """
+            Retrieves the dictionary representation of Student class.
+            if attr is list of strings only the names in the list must be printed
+            otherwise all the attributes are printed.
         """
         if type(attrs) is not list or attrs==None:
             return self.__dict__
