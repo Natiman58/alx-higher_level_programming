@@ -19,13 +19,10 @@ class Student:
             Retrieves the dictionary representation of Student class\
             if the attr is in attrs retrieve only the name if not all
         """
-        if type(attrs) != list:
-            return self.__dict__
-        else:
-            temp = {}
-            for i in attrs:
-                if type(i) != str:
-                    return self.__dict__
-                if i in self.__dict__.keys():
-                    temp[i] = self.__dict__[i]
-            return temp
+        my_dict = dict()
+        if type(attrs) is list and all(type(x) is str for x in attrs):
+            for x in attrs:
+                if x in self.__dict__:
+                    my_dict.update({x: self.__dict__[x]})
+            return my_dict
+        return self.__dict__.copy()
