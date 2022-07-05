@@ -3,7 +3,6 @@
     A module that contains the class Student
 """
 
-
 class Student:
     """
         A class that defines a student by\
@@ -18,9 +17,9 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-            Retrieves the dictionary representation of Student class.
-            if attr is list of strings only the names in the list must be printed
-            otherwise all the attributes are printed.
+            Retrieves the dictionary representation of Student class.\
+            if attr is list of strings only the names in the list must be printed\
+            otherwise all the attributes are printed.\
         """
         if attrs == None or type(attrs) != list:
             return self.__dict__
