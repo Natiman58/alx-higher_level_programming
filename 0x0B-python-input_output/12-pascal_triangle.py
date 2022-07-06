@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+    A module containg the function 'pascal_triangle'
+"""
+
+
 def pascal_triangle(n):
     """
         A function that returns a list of integers representing
