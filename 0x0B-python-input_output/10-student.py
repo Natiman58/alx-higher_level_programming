@@ -3,6 +3,7 @@
     A module that contains the class Student
 """
 
+
 class Student:
     """
         A class that defines a student by
