@@ -20,7 +20,7 @@ class Base:
             Initialize the attributes.
             arg:
                 id - argument value of id
-                self. id - public instance attribute id
+                'self.id' - public instance attribute id
         """
         if id is not None and id is int:
             self.id = id
