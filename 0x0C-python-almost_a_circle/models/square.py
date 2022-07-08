@@ -40,4 +40,31 @@ class Square(Rectangle):
         self.__width = value
         self.__height = value
 
+    def update(self, *args, **kwargs):
+        """Assigns attributes"""
+        if len(args) != 0 and args is not None:
+            if len(args) >= 1:
+                if type(args[0]) != int:
+                    raise TypeError("id must be an integer")
+                self.id = args[0]
+            if len(args) > 1:
+                self.size = args[1]
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if type(value) != int and value is not None:
+                        raise TypeError("id must be an integer")
+                    self.id = value
+                if key == "size":
+                    self.size = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
+
+
 
