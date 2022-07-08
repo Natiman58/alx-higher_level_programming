@@ -96,6 +96,7 @@ class Rectangle(Base):
             Assigns an argument for each attribute.
             for *args: argument order is super important
             for **kwargs: argument order is not important.
+            if *args exist go to *args if not go to **kwargs
         """
         if len(args) != 0 and args is not None:
             if len(args) >= 1:
@@ -124,6 +125,3 @@ class Rectangle(Base):
                     self.x = value
                 if key == "y":
                     self.y = value
-
-
-
