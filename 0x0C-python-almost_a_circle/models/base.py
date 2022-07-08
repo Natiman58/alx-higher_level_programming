@@ -22,7 +22,7 @@ class Base:
                 id - argument value of id
                 'self.id' - public instance attribute id
         """
-        if id is not None and id is int:
+        if id is not None and type(id) is int:
             self.id = id
         else:
             Base.__nb_objects += 1
