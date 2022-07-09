@@ -7,6 +7,7 @@
     in all your future classes and to avoid\
     duplicating the same code (by extension, same bugs).
 """
+import json
 
 
 class Base:
@@ -22,8 +23,21 @@ class Base:
                 id - argument value of id
                 'self.id' - public instance attribute id
         """
-        if id is not None and type(id) is int:
+        if id is not None and type(id) is not int:
+            raise TypeError("id must be an integer")
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+            Returns the JSON string representation of list_dictionaries
+            list_dictionaries is a list of dictionaries.
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
+
