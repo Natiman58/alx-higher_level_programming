@@ -56,3 +56,14 @@ class Base:
         Rectangle = cls.__name__ + ".json"
         with open(Rectangle, 'w') as f:
             f.write(lis_t)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+            Returns the list of the JSON string representation of 'json_string'
+            json_string is a string representing a list of dictionaries
+        """
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
+
