@@ -44,7 +44,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """
-            writes the JSON string representation of list_objs to a file:
+            writes the JSON string representation of list_objs to a file(Rectangle.json):
             list_objs is a list of instances(objects) who inherits of Base\
             example: list of Rectangle or list of Square instances
             If list_objs is None, save an empty list
@@ -56,6 +56,3 @@ class Base:
         Rectangle = cls.__name__ + ".json"
         with open(Rectangle, 'w') as f:
             f.write(lis_t)
-
-
-
