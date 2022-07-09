@@ -130,5 +130,5 @@ class Rectangle(Base):
         """
             Returns the dictionary representation of a Rectangle.
         """
-        dic_t = {'x': self.x, 'width': self.width, 'id': self.id, 'height': self.height, 'y': self.y}
+        dic_t = {'y': self.y, 'x': self.x, 'id': self.id, 'width': self.width, 'height': self.height}
         return dic_t
