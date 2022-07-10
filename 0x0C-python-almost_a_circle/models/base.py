@@ -8,6 +8,7 @@
     duplicating the same code (by extension, same bugs).
 """
 import os
+import csv
 import json
 
 
@@ -92,4 +93,51 @@ class Base:
                 l_dict = cls.from_json_string(s)
                 for d in l_dict:
                     lis_t.append(cls.create(**d))
+        return lis_t
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+            To serialize(to string_ize) list_objs file into a CSV file(file_name.csv)
+        """
+        if type(list_objs) != list and list_objs is not None or\
+                not all(isinstance(i, cls) for i in list_objs):
+            raise TypeError("list_objs must be a list of instances.")
+
+        file_name = cls.__name__ + ".csv"
+        with open(file_name, 'w', encoding='utf-8', newline='') as csv_file:
+            if list_objs is not None:
+                list_objs = [i.to_dictionary() for i in list_objs]
+                if cls.__name__ == 'Rectangle':
+                    field_names = ['id', 'width', 'height', 'x', 'y']
+                elif cls.__name__ == 'Square':
+                    field_names = ['id', 'size', 'x', 'y']
+                writer = csv.DictWriter(csv_file, fieldnames=field_names)
+                writer.writeheader()
+                writer.writerows(list_objs)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+            To deserialize(reconstruct an object) from a csv file
+        """
+        file_name = cls.__name__ + '.csv'
+        lis_t = []
+        if os.path.exists(file_name):
+            with open(file_name, 'r') as csv_file:
+                reader = csv.reader(csv_file, delimiter=',')
+                if cls.__name__ == 'Rectangle':
+                    field_names = ['id', 'width', 'height', 'x', 'y']
+
+                elif cls.__name__ == 'Square':
+                    field_names = ['id', 'size', 'x', 'y']
+
+                for idx, row in enumerate(reader):
+                    if idx > 0:
+                        i = cls(1, 1)
+                        for j, e in enumerate(row):
+                            if e:
+                                setattr(i, field_names[j], int(e))
+                        lis_t.append(i)
+
         return lis_t
