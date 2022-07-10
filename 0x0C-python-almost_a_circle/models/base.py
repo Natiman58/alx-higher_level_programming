@@ -7,6 +7,7 @@
     in all your future classes and to avoid\
     duplicating the same code (by extension, same bugs).
 """
+import os
 import json
 
 
@@ -60,8 +61,8 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """
-            Returns the list of the JSON string representation of 'json_string'
-            json_string is a string representing a list of dictionaries
+            Returns a structured data; the list of the JSON string representation of 'json_string'
+            json_string is a jason string representing a list of dictionaries.
         """
         if json_string is None or json_string == "":
             return []
@@ -77,4 +78,18 @@ class Base:
         dummy.update(**dictionary)
         return dummy
 
-
+    @classmethod
+    def load_from_file(cls):
+        """
+            Returns the list of instances(objects) in the file name(file_name)
+            if file name doesn't exist: return empty list
+        """
+        file_name = cls.__name__ + ".json"
+        lis_t = []
+        if os.path.exists(file_name):
+            with open(file_name, 'r', encoding="utf-8") as f:
+                s = f.read()
+                l_dict = cls.from_json_string(s)
+                for d in l_dict:
+                    lis_t.append(cls.create(**d))
+        return lis_t
