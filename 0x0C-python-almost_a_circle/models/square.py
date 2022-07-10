@@ -15,7 +15,8 @@ class Square(Rectangle):
             Initialize the attributes by using the attributes of the\
             superclass; Rectangle\
             Call the super class with id, x, y, width and height\
-            this super call will use the logic of the __init__ of the Rectangle class.\
+            this super call will use the logic of the\
+            __init__ of the Rectangle class.\
             The width and height must be assigned to the value of size
         """
         self.size = size
@@ -72,5 +73,3 @@ class Square(Rectangle):
         """
         dic_t = {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
         return dic_t
-
-

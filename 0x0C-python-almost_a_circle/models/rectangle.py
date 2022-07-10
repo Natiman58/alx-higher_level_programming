@@ -83,13 +83,14 @@ class Rectangle(Base):
         for i in range(self.__height):
             for x in range(self.__x):
                 print(" ", end="")
-            for j in range (self.__width):
+            for j in range(self.__width):
                 print("#", end="")
             print()
 
     def __str__(self):
         """Returns the string representation of the Rectangle"""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}\
+                - {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
         """
@@ -130,5 +131,6 @@ class Rectangle(Base):
         """
             Returns the dictionary representation of a Rectangle.
         """
-        dic_t = {'height': self.height, 'width': self.width, 'id': self.id, 'x': self.x, 'y': self.y}
+        dic_t = {'height': self.height, 'width': self.width,
+                 'id': self.id, 'x': self.x, 'y': self.y}
         return dic_t

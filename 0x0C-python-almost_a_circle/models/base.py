@@ -46,10 +46,12 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """
-            writes the JSON string representation of list_objs to a file(Rectangle.json):
-            list_objs is a list of instances(objects) who inherits of Base\
-            example: list of Rectangle or list of Square instances
-            If list_objs is None, save an empty list
+            writes the JSON string representation of list_objs\
+                    to a file(Rectangle.json):\
+                    list_objs is a list of instances(objects)\
+                    who inherits of Base\
+                    example: list of Rectangle or list of Square instances\
+                    If list_objs is None, save an empty list
         """
         if list_objs is None or list_objs == []:
             lis_t = "[]"
@@ -62,8 +64,10 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """
-            Returns a structured data; the list of the JSON string representation of 'json_string'
-            json_string is a jason string representing a list of dictionaries.
+            Returns a structured data; the list of the\
+                    JSON string representation of 'json_string'\
+                    json_string is a jason string\
+                    representing a list of dictionaries.
         """
         if json_string is None or json_string == "":
             return []
@@ -98,7 +102,8 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """
-            To serialize(to string_ize) list_objs file into a CSV file(file_name.csv)
+            To serialize(to string_ize) list_objs file\
+                    into a CSV file(file_name.csv)
         """
         if type(list_objs) != list and list_objs is not None or\
                 not all(isinstance(i, cls) for i in list_objs):
