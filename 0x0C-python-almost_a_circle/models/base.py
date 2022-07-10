@@ -141,3 +141,52 @@ class Base:
                         lis_t.append(i)
 
         return lis_t
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """
+            Opens a Turtle window and draws
+            rectangles and squares.
+        Args:
+            - list_rectangles: list of Rectangle instances(objects)
+            - list_squares: list of Square instances(objects)
+        """
+
+        import turtle
+        import time
+        from random import randrange
+
+        t = turtle.Turtle()
+        t.color("green")
+        t.shape("turtle")
+        t.pensize(3)
+        turtle.bgcolor("white")
+
+        for i in (list_rectangles + list_squares):
+            t.pendown()
+            turtle.Screen().colormode(255)
+            t.pencolor((randrange(255), randrange(255), randrange(255)))
+            Base.draw_rect(t, i)
+            time.sleep(1)
+        time.sleep(5)
+
+    @staticmethod
+    def draw_rect(t, rect):
+        """
+            Helper method that draws a Rectangle or Square class.
+            t: turtle(pen)
+            rect: rectangle position
+        """
+
+        t.penup()
+        t.goto(rect.x, rect.y)
+        t.pendown()
+        t.fd(rect.width)
+        t.rt(90)
+        t.fd(rect.height)
+        t.rt(90)
+        t.fd(rect.width)
+        t.rt(90)
+        t.fd(rect.height)
+        t.penup()
+        t.home()
