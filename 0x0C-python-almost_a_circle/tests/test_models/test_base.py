@@ -10,6 +10,9 @@ import os
 
 
 class LearnTest(unittest.TestCase):
+    """
+        A class for testing
+    """
 
     def setUp(self):
         """
@@ -60,7 +63,7 @@ class LearnTest(unittest.TestCase):
         """Test static method to_json_string with wrong number of args."""
 
         str_1 = ("to_json_string() missing 1 required positional argument: " +
-              "'list_dictionaries'")
+                 "'list_dictionaries'")
         with self.assertRaises(TypeError) as x:
             Base.to_json_string()
         self.assertEqual(str_1, str(x.exception))
@@ -161,7 +164,7 @@ class LearnTest(unittest.TestCase):
 
         with self.assertRaises(TypeError) as x:
             list_output = Rectangle.from_json_string([8, 9])
-        self.assertEqual("json_string must be a string", str(x.exception))
+        self.assertEqual("JSON object must be a str", str(x.exception))
         with self.assertRaises(TypeError) as x:
             list_output = Rectangle.from_json_string(8)
         self.assertEqual("json_string must be a string", str(x.exception))
