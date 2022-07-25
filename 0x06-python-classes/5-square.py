@@ -3,7 +3,7 @@
 
 
 class Square:
-    """A class with private instance attribute 'size'"""
+    """A class with private class attribute 'size', 'position'"""
     __size = ''
     __position = ''
 
