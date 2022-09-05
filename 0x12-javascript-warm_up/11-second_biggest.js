@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const array = (process.argv).slice(2).map(Number);
-const sortedArray = array.sort(function (a, b) { return a - b; });
+let array = (process.argv).slice(2).map(Number);
+let sortedArray = array.sort(function (a, b) { return a - b; });
 
 if (array.length <= 3) {
   console.log('0');
