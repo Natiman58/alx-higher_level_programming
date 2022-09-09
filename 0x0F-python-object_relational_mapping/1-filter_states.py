@@ -26,3 +26,6 @@ if __name__ == '__main__':
     rows = work_space.fetchall()
     for row in rows:
         print(row)
+
+    work_space.close()
+    cnx.close()
