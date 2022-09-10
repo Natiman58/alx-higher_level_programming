@@ -21,11 +21,11 @@ if __name__ == '__main__':
     session = Session(engine)
 
     state_a = session.query(State).order_by(State.id).filter(
-            State.name.contains('a'))
+            State.name.like('%a%'))
 
     if state_a:
         for state in state_a:
-            print("{}:{}".format(state.id, state.name))
+            print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
 
