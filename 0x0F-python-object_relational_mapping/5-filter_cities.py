@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-     a script that takes in the name of a state as an argument\
-             and lists all cities of that state,¸
-             using the database hbtn_0e_4_usa
+     a script that takes in the name of a state as an argument
+     and lists all cities of that state,
+     using the database hbtn_0e_4_usa
 """
 
 if __name__ == '__main__':
@@ -27,8 +27,8 @@ if __name__ == '__main__':
             WHERE states.name = %s ORDER BY cities.id ASC;", (state_name, ))
 
     rows = work_space.fetchall()
-    for row in rows:
-        print(row)
+
+    print(", ".join(row[0] for row in rows))
 
     work_space.close()
     cnx.close()
