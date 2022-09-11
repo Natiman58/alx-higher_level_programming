@@ -21,10 +21,8 @@ if __name__ == '__main__':
 
     session = Session(engine)
 
-    del_objs = session.query(State).filter(State.name.like('%a%'))
-
-    for obj in del_objs:
-        del_objs.delete(obj)
+    for obj in session.query(State).filter(State.name.like('%a%')):
+        session.delete(obj)
 
     session.commit()
     session.close()
