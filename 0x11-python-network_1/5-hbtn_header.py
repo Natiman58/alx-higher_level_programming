@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    A python request that sends a URL and
+    A python script that sends a request a URL and
     displays the value of the variable 'X-Request-Id'
     from the response header
 """
