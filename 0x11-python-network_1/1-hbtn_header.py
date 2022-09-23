@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+    A python script that displays 'X-Request-Id' from the url header
 """
 if __name__ == "__main__":
     from urllib.request import urlopen
