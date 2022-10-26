@@ -1,6 +1,6 @@
 const $ = window.$;
 $(function () {
   $('#add_item').click(function () {
-    $('header').toggleClass('red green');
+    $('UL.my_list').append('<li>Item</li>');
   });
 });
